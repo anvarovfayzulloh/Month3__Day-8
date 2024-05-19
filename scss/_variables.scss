@@ -1,0 +1,43 @@
+// COLORS
+
+// SIZES
+
+// FONTS
+
+// MIXINS
+
+@mixin main-titles($fw, $fs, $lh, $ls,  $c){
+    font-weight: $fw;
+    font-size: $fs;
+    letter-spacing: $ls;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin main-text($fw, $fs, $lh, $ls,  $c){
+    font-weight: $fw;
+    font-size: $fs;
+    letter-spacing: $ls;
+    line-height: $lh;
+    color: $c;
+}
+
+//Class styles
+
+.button{
+    outline: none;
+    border: 1px solid #262323;
+    font-family: 'Mulish';
+    @include main-text(600, 20px, 31px, 0.07em, #262323);
+    max-width: 267px;
+    border-radius: 32px;
+    padding: 14px 0px;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        background-color: #262323;
+        color: #FFFFFF;
+        transition: 900ms;
+    }
+}

@@ -1,0 +1,85 @@
+// FOR HERO
+
+.hero__wrapper{
+    background-image: url(../../images/hero__background.png);
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    max-width: 1920px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 88px 0px 463px 0px;
+}
+.title__wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__title{
+    font-family: 'Rosewind';
+    @include main-titles(700, 90px, 139px,0.07em,#262323);
+    max-width: 525px;
+    width: 100%;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    position: absolute;
+    max-width: 560px;
+    min-width: 559px;
+    top: 10px;
+    left: 480px;
+    top: 325px;
+    z-index: 2;
+}
+.hero__text{
+    font-family: 'Mulish';
+    @include main-text(400, 20px, 31px, 0.07em, #262323);
+    max-width: 560px;
+}
+
+@media screen and (max-width: 1580px) {
+    .hero__wrapper{
+        min-height: 852px;
+    }
+    .action{
+        gap: 33px;
+        left: 110px;
+        top: 259px;
+        
+        
+    }
+    .hero__title{
+        font-size: 52px;
+        line-height: 80.6px;
+        max-width: 300px;
+     }
+}
+
+@media screen and (max-width: 1120px){
+    .action{
+        gap: 33px;
+        left: 0px;
+        top: 259px;
+        max-width: 300px;
+        min-width: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .title__wrap{
+        padding: 0px 39px;
+    }
+    button{
+         font-size: 16px;
+     list-style: 24.8px;
+     }
+     p{
+         font-size: 16px;
+     list-style: 24.8px;
+     }
+     
+}
+
+

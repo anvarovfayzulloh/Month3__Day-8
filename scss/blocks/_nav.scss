@@ -1,0 +1,58 @@
+// FOR NAV
+
+.nav__wrapper {
+    display: flex;
+    padding: 0px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list{
+    max-width: 719px;
+    display: flex;
+    gap: 70px;
+    font-family: 'Mulish';
+    @include main-text(400, 20px, 31px, 7%, #262323);
+
+
+    li:first-child{
+        list-style: disc;
+    }
+}
+.burger{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1170px) {
+    .nav__list{
+        gap: 30px;
+        
+    }
+}
+@media screen and (max-width: 1023px) {
+    .nav__wrapper{
+        padding: 9px 100px;
+
+        img{
+            width: 54,05px;
+
+        }
+    }
+    .nav__list{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav__wrapper{
+        padding: 9px 30px;
+    }
+}
+@media screen and (max-width: 393px){
+    .nav__wrapper{
+        padding: 9px 20px;
+    }
+}
